@@ -1,6 +1,32 @@
+$base-color: #121212;
+$second-color: #1f1f1f;
+$first-text-color: #cfcfcf;
+$second-text-color: #747474;
+
 .App {
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+  width: 100vw;
   box-sizing: border-box;
-  text-align: center;
+  background-color: $second-color;
+}
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+  width: 8px; /* ширина для вертикального скролла */
+  height: 8px; /* высота для горизонтального скролла */
+  background-color: none;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 9em;
+  box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #253861;
 }
