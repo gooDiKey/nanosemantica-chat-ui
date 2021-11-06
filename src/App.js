@@ -1,7 +1,7 @@
 import './App.scss';
 import Chat from './Chat/Chat';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Chat />

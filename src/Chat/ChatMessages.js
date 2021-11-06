@@ -1,8 +1,8 @@
 import React from 'react';
 import Message from './Message';
 
-function ChatMessages({ messagesData }) {
-  let author = 'author';
+const ChatMessages = ({ messagesData }) => {
+  const author = 'author';
   let messages = messagesData.map(message => 
     <Message
       message={ message.text }

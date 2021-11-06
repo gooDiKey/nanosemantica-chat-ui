@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import SendIcon from '../svg/SendIcon'
+import React, { useState } from 'react';
+import SendIcon from '../svg/SendIcon';
 
-function ChatUserMessage({ sendMessage }) {
+const ChatUserMessage = ({ sendMessage }) => {
   const [message, setMessage] = useState('');
 
-  function send(e) {
+  const send = (e) => {
     if (message.trim() === '') {
       return;
     }
@@ -24,4 +24,4 @@ function ChatUserMessage({ sendMessage }) {
   )
 }
 
-export default ChatUserMessage
+export default ChatUserMessage;

@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-function Message({ message, author }) {
-  let wrapperClass = 'message-line';
-  let sideClass = author === 'Пользователь' ? ' right' : ' left'; 
+const Message = ({ message, author }) => {
+  const wrapperClass = 'message-line';
+  const sideClass = author === 'Пользователь' ? ' right' : ' left'; 
 
   return (
     <div className={ wrapperClass + sideClass }>
@@ -14,4 +14,4 @@ function Message({ message, author }) {
   )
 }
 
-export default Message
+export default Message;
