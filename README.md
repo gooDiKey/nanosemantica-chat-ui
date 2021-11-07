@@ -9,7 +9,7 @@
 
 Нажмите кнопку "Создать новый чат" и заполните данные формы
 
-![create-chat](https://github.com/gooDiKey/nanosemantica-chat-ui/tree/main/readme-images/create-chat.gif)
+![create-chat](readme-images/create-chat.gif)
 
 ### Валидация формы создания чата
 
@@ -18,7 +18,7 @@
 - Имя должно состоять из букв
 - Возраст должен быть в пределах от 8 до 120 лет
 
-![create-chat-with-errrors](https://github.com/gooDiKey/nanosemantica-chat-ui/tree/main/readme-images/create-chat-with-errrors.gif)
+![create-chat-with-errrors](readme-images/create-chat-with-errrors.gif)
 
 ### Отправка сообщения
 
@@ -29,7 +29,7 @@
 Бот дает развернутый ответ только на два вида сообщений: "3g" и "lte".
 На все остальные сообщения бот отвечает: "Извините, я вас не понимаю."
 
-![send-message](https://github.com/gooDiKey/nanosemantica-chat-ui/tree/main/readme-images/send-message.gif)
+![send-message](readme-images/send-message.gif)
 
 ### Смена чата
 
@@ -37,14 +37,14 @@
 
 Для того, чтобы выйти из чата, нажмите кнопку назад
 
-![change-chat](https://github.com/gooDiKey/nanosemantica-chat-ui/tree/main/readme-images/change-chat.gif)
+![change-chat](readme-images/change-chat.gif)
 
 ### Очистка истории
 
 Для очистки истории чата нажмите кнопку удалить (в правом верхем углу).
 Осторожно! Данное действие невозможно будет отменить
 
-![delete-chat](https://github.com/gooDiKey/nanosemantica-chat-ui/tree/main/readme-images/delete-chat.gif)
+![delete-chat](readme-images/delete-chat.gif)
 
 ## Задания:
 
