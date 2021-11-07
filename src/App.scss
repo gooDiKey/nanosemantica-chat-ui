@@ -1,7 +1,8 @@
-$base-color: #121212;
-$second-color: #1f1f1f;
-$first-text-color: #cfcfcf;
-$second-text-color: #747474;
+@import './ColorsVars'; 
+
+* {
+  color: $first-text-color;
+}
 
 .App {
   display: flex;
@@ -13,14 +14,21 @@ $second-text-color: #747474;
   background-color: $second-color;
 }
 
-/* полоса прокрутки (скроллбар) */
+.chat-app {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: $first-text-color;
+  background-color: $base-color;
+}
+
+
 ::-webkit-scrollbar {
-  width: 8px; /* ширина для вертикального скролла */
-  height: 8px; /* высота для горизонтального скролла */
+  width: 8px;
+  height: 8px;
   background-color: none;
 }
 
-/* ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
   background-color: gray;
   border-radius: 9em;

@@ -1,0 +1,61 @@
+@import '../ColorsVars.scss';
+
+.chats-list {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 500px;
+  height: 100%;
+  background-color: $second-color;
+  border-right: 2px solid $base-color;
+  box-sizing: border-box;
+
+  & .create-chat-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-bottom: 2px solid $base-color;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__alternative-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    & div {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+
+      & span {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  & .chats {
+    flex-grow: 1;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .chats-list {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chats-list {
+    width: 100vw;
+  }
+}

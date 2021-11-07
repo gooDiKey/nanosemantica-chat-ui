@@ -1,0 +1,14 @@
+@import '../../ColorsVars'; 
+
+.base-button {
+  background-color: $second-color;
+  border: none;
+  color: $first-text-color;
+  padding: 15px;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: $third-color;
+    cursor: pointer;
+  }
+}

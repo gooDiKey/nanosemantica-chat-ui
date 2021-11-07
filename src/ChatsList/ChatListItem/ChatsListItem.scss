@@ -1,0 +1,25 @@
+@import '../../ColorsVars.scss'; 
+
+.chats-item {
+  height: 80px;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  background-color: $second-color;
+  border-bottom: 1px solid #555;
+
+  &:hover {
+    background-color: $third-color;
+    cursor: pointer;
+  }
+
+  &__user-name {
+    color: $blue-color;
+    font-size: 20px;
+    margin: 5px 0 10px 0;
+  }
+}
+  
+.active {
+  border: 1px solid $blue-color;
+  background-color: $third-color;
+}
