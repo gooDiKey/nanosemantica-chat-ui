@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# CHAT API UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Тестовый проект для "Лаборатория Наносемантика".
+Пользовательский интерфейс для работы с CHAT API.
 
-## Available Scripts
+## Интерфейс
 
-In the project directory, you can run:
+### Создание чата
+
+Нажмите кнопку "Создать новый чат" и заполните данные формы
+
+![create-chat](https://github.com/gooDiKey/nanosemantica-chat-ui/tree/main/readme-images/create-chat.gif)
+
+### Валидация формы создания чата
+
+В форме есть простая валидация:
+- Все поля должны быть заполнены
+- Имя должно состоять из букв
+- Возраст должен быть в пределах от 8 до 120 лет
+
+![create-chat-with-errrors](https://github.com/gooDiKey/nanosemantica-chat-ui/tree/main/readme-images/create-chat-with-errrors.gif)
+
+### Отправка сообщения
+
+При первом входе в чат, происходит инициализация чата. Отправляется запрос на сервер и бот выдает приветственное сообщение. После этого можно начинать общение.
+
+Для отправки сообщения введите сообщение в инпут и нажмите кнопку отправить (отправка сообщения по нажатию на клавишу enter не добавлена).
+
+Бот дает развернутый ответ только на два вида сообщений: "3g" и "lte".
+На все остальные сообщения бот отвечает: "Извините, я вас не понимаю."
+
+![send-message](https://github.com/gooDiKey/nanosemantica-chat-ui/tree/main/readme-images/send-message.gif)
+
+### Смена чата
+
+Вы можете сменить чат кликая по элементам в списке чатов (левое меню)
+
+Для того, чтобы выйти из чата, нажмите кнопку назад
+
+![change-chat](https://github.com/gooDiKey/nanosemantica-chat-ui/tree/main/readme-images/change-chat.gif)
+
+### Очистка истории
+
+Для очистки истории чата нажмите кнопку удалить (в правом верхем углу).
+Осторожно! Данное действие невозможно будет отменить
+
+![delete-chat](https://github.com/gooDiKey/nanosemantica-chat-ui/tree/main/readme-images/delete-chat.gif)
+
+## Задания:
+
+### Интерфейс должен включать в себя:
+- [x] строку ввода сообщения,
+- [x] кнопку отправки сообщения,
+- [x] кнопку перезапуска разговора в новой сессии с удалением истории текущего диалога,
+- [x] историю текущего диалога (сохраняется при перезапуске).
+
+
+### Пожелание (будет плюсом, но необязательно ):
+
+- [x] Для реализации проекта следует создать отдельный репозиторий;
+- [x] Выполнить задание с использованием React;
+- [x] Концептуально продумать и разработать UI (user interface);
+- [ ] Настроить сборку на webpack самостоятельно (не использовать CRA).
+- [x] Использовать localStorage для хранения данных
+
+## Основные команды
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Dev mode
+[http://localhost:3000](http://localhost:3000) для просмотра в браузере с локальной машины
+[http://192.168.1.70:3000](http://192.168.1.70:3000) для просмотра в браузере в локальной сети
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Сборка проекта в папку `build`

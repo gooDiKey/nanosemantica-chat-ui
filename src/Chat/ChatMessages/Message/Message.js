@@ -4,7 +4,6 @@ import './Message.scss';
 const Message = ({ user, message, author }) => {
   const wrapperClass = 'message-line';
   const sideClass = author === user ? ' right' : ' left';
-  console.log(message);
 
   return (
     <div className={ wrapperClass + sideClass }>

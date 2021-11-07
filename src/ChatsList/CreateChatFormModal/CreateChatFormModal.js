@@ -12,17 +12,18 @@ const CreateChatFormModal = ({ createNewChat, closeModal }) => {
 
   const createChat = e => {
     e.preventDefault();
+    
     if (!(name && age && infAge)) {
       setError('Заполните все поля!');
       return;
     }
 
-    if (name.trim().search(/^[A-Za-zА-Яа-я]/g)) {
+    if (name.trim().search(/^[a-zA-Zа-яёА-ЯЁ]+$/u)) {
       setError('Имя может состоять только из русских и английских букв');
       return;
     }
 
-    if ( age > 120 || age < 8 || infAge > 120 || infAge < 8) {
+    if (age > 120 || age < 8 || infAge > 120 || infAge < 8) {
       setError('Возраст должен быть в переделах от 8 до 120 лет');
       return;
     }
