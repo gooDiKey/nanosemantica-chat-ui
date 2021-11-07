@@ -18,7 +18,7 @@
 - Имя должно состоять из букв
 - Возраст должен быть в пределах от 8 до 120 лет
 
-![create-chat-with-errrors](readme-images/create-chat-with-errrors.gif)
+![create-chat-with-errors](readme-images/create-chat-with-errors.gif)
 
 ### Отправка сообщения
 
